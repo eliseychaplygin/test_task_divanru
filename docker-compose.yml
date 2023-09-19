@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+    php:
+        build:
+            context: docker/php
+        container_name: php
+        ports:
+            - "9000:80"
+        volumes:
+            - ./:/app
